@@ -1,5 +1,10 @@
 #include "LinkedList.h"
 
+class LinkedListClass
+{
+public:
+	void LinkedListMain();
+};
 
 void LinkedListMain()
 {
@@ -12,51 +17,58 @@ void LinkedListMain()
 
 	for (i = 0; i < 5; i++)
 	{
-		newNode = SLL_CreateNode(i);
-		SLL_AppendNode(&list, newNode);
+		newNode = SLL_CreateNode(i);	//	새로운 노드를 생성 함
+		SLL_AppendNode(&list, newNode);	//	생성한 노드를 list에 추가함 
 	}
 
 	for (i = 0; i < SLL_GetNodeCount(list); i++)
 	{
-		newNode = SLL_GetNodeAt(list, i);
-		cout << newNode->Data << endl;
+		newNode = SLL_GetNodeAt(list, i);	//	i 번째 위치의 node를 가져 옴
+		cout << newNode->Data << endl;		
 	}
-
 }
 
 
-Node* SLL_CreateNode(ElementType newData)
-{
-	Node* newNode = (Node*)malloc(sizeof(Node));
 
-	newNode->Data = newData;
-	newNode->nextNode = NULL;
+/*
+	Node 생성
+*/
+Node* SLL_CreateNode(ElementType newData)
+{	
+	Node* newNode = (Node*)malloc(sizeof(Node));	//	자유 저장소에 메모리 할당 
+
+	newNode->Data = newData;	//	데이터값 저장		
+	newNode->nextNode = NULL;	//	현재 노드의 다음 노드 포인터를 NULL로 저장 
 
 	//cout << newNode->Data << endl;
-
 	return newNode;
 }
 
+/*
+	Node 삭제
+*/
 void SLL_DestroyNode(Node* node)
 {
 	free(node);
 }
 
-
+/*
+	Node 추가
+*/
 void SLL_AppendNode(Node** head, Node* newNode)
 {
-	if ((*head) == NULL)
+	if ((*head) == NULL)	//	head node 가 null 인 경우
 	{
-		*head = newNode;
-	}
-	else
+		*head = newNode;	//	newNode를 head node로 설정
+	}	
+	else					//	head node 가 null 이 아닌 경우 
 	{
 		Node* tail = (*head);
-		while (tail->nextNode != NULL)
+		while (tail->nextNode != NULL)	//	tail node를 찾음
 		{
-			tail = tail->nextNode;
+			tail = tail->nextNode;		
 		}
-		tail->nextNode = newNode;
+		tail->nextNode = newNode;		//	tail node의 다음 node를 newNode로 설정
 	}
 }
 

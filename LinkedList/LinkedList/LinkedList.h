@@ -16,6 +16,9 @@ typedef struct tagNode
 } Node;
 
 
+/*
+	Single Linked List	
+*/
 void LinkedListMain();
 Node* SLL_CreateNode(ElementType newData);
 void SLL_DestroyNode(Node* node);
