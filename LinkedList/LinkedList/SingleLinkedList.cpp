@@ -1,12 +1,13 @@
-#include "LinkedList.h"
+#include "SingleLinkedList.h"
 
-class LinkedListClass
+class SingleLinkedListClass
 {
 public:
-	void LinkedListMain();
+	void SingleLinkedListMain();
+	void print(Node* list);
 };
 
-void LinkedListMain()
+void SingleLinkedListMain()
 {
 	int i = 0;
 	int count = 0;
@@ -21,10 +22,27 @@ void LinkedListMain()
 		SLL_AppendNode(&list, newNode);	//	생성한 노드를 list에 추가함 
 	}
 
+	
+
+	
+	print(list);	
+
+	for (i = 0; i < SLL_GetNodeCount(list); i++)
+	{
+		current = SLL_GetNodeAt(list, i);
+		SLL_RemoveNode(&list, current);
+	}
+}
+
+void print(Node* list)
+{
+	int i = 0;
+	Node* newNode;
+
 	for (i = 0; i < SLL_GetNodeCount(list); i++)
 	{
 		newNode = SLL_GetNodeAt(list, i);	//	i 번째 위치의 node를 가져 옴
-		cout << newNode->Data << endl;		
+		cout << newNode->Data << endl;
 	}
 }
 
@@ -39,8 +57,7 @@ Node* SLL_CreateNode(ElementType newData)
 
 	newNode->Data = newData;	//	데이터값 저장		
 	newNode->nextNode = NULL;	//	현재 노드의 다음 노드 포인터를 NULL로 저장 
-
-	//cout << newNode->Data << endl;
+		
 	return newNode;
 }
 
@@ -72,15 +89,25 @@ void SLL_AppendNode(Node** head, Node* newNode)
 	}
 }
 
+/*
+	Node 삽입
+	@current	추가하고자 하는 위치에 존재하는 Node		
+	@newNode	추가하고자 하는 새로운 Node
+*/
 void SLL_InsertAfter(Node* current, Node* newNode)
 {
 	newNode->nextNode = current->nextNode;
 	current->nextNode = newNode;
 }
 
+/*
+	Head 위치에 Node 삽입
+	@head		LinkedList
+	@newNode	삽입하고자 하는 Node
+*/
 void SLL_InsertNewHead(Node** head, Node* newHead)
 {
-	if (*head == NULL)
+	if (*head == NULL)	
 	{
 		(*head) = newHead;
 	}
@@ -91,9 +118,14 @@ void SLL_InsertNewHead(Node** head, Node* newHead)
 	}
 }
 
+/*
+	Node 삭제 
+	@head		삭제하고자 하는 Node가 포함된 LinkedList
+	@removeNode	삭제하고자 하는 Node
+*/
 void SLL_RemoveNode(Node** head, Node* removeNode)
 {
-	if (*head == removeNode)
+	if (*head == removeNode)		//	삭제하고자 하는 Node가 head 위치에 있는 경우 
 	{
 		*head = removeNode->nextNode;
 	}
@@ -108,11 +140,19 @@ void SLL_RemoveNode(Node** head, Node* removeNode)
 
 		if ( current != NULL)
 		{
-			current->nextNode = removeNode->nextNode;
+			//	삭제하고자 하는 Node의 다음 Node를, 삭제하고자 하는 Node의 이전 Node의 NextNode로 설정함 
+			current->nextNode = removeNode->nextNode;	
 		}
+
+		SLL_DestroyNode(removeNode);
 	}
 }
 
+/*
+	Node 탐색
+	@head		찾고자 하는 Node가 포함된 LinkedList
+	@location	전달된 위치의 Node 정보를 return 함
+*/
 Node* SLL_GetNodeAt(Node* head, int location)
 {
 	Node* current = head;
@@ -125,6 +165,10 @@ Node* SLL_GetNodeAt(Node* head, int location)
 	return current;
 }
 
+/*
+	LinkedList 의 사이즈 확인
+	@head	사이즈를 측정하고자 하는 LinkedList
+*/
 int SLL_GetNodeCount(Node* head)
 {
 	int count = 0;
