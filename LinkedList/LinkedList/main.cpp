@@ -4,6 +4,7 @@
 
 #include "SingleLinkedList.h"
 #include "DoubleLinkedList.h"
+#include "CircularLinkedList.h"
 
 int main()
 {	
@@ -11,12 +12,10 @@ int main()
 
 	//SingleLinkedListMain();
 
-	DoubleLinkedList d;
-	d.DoubleLinkedListMain();
+	//DoubleLinkedList d;
+	//d.DoubleLinkedListMain();
 	
-	
-
-	
-	
+	CircularDoubleLinkedList cdl;
+	cdl.CircularDoubleLinkedListMain();
 	
 }

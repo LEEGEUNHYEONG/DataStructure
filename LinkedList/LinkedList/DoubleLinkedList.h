@@ -1,8 +1,8 @@
 #ifndef DoubleLinkedList_H
 #define DoubleLinkedList_H
 
-
-
+#include "DoubleNode.h"
+/*
 typedef int ElementType;
 
 typedef struct doubleTagNode
@@ -11,6 +11,7 @@ typedef struct doubleTagNode
 	struct doubleTagNode* nextNode;
 	struct doubleTagNode* prevNode;
 } DoubleNode;
+*/
 
 
 class DoubleLinkedList
