@@ -1,10 +1,14 @@
 #include "BasicTree.h"
+#include <string>
 
 BasicTree::BasicTree()
 {
 	cout << "Basic Tree" << endl;
 }
 
+/*
+	노드를 생성
+*/
 LRNode * BasicTree::createNode(NodeData data)
 {
 	LRNode* newNode = (LRNode*)malloc(sizeof(LRNode));
@@ -15,11 +19,17 @@ LRNode * BasicTree::createNode(NodeData data)
 	return newNode;
 }
 
+/*
+	노드를 소멸
+*/
 void BasicTree::destroyNode(LRNode* node)
 {
 	free(node);
 }
 
+/*
+	트리를 소멸 
+*/
 void BasicTree::destoryTree(LRNode * tree)
 {
 	if (tree->rightChild != NULL)
@@ -38,6 +48,9 @@ void BasicTree::destoryTree(LRNode * tree)
 	destroyNode(tree);
 }
 
+/*
+	child를 추가
+*/
 void BasicTree::addChildNode(LRNode * parent, LRNode* child)
 {
 	if (parent->leftChild == NULL)

@@ -4,5 +4,6 @@ void main()
 {
 	cout << "hello" << endl;
 
-	BasicTree *basicTree = new BasicTree();
+	//BasicTree *basicTree = new BasicTree();
+	BinaryTree * binaryTree = new BinaryTree();
 }
