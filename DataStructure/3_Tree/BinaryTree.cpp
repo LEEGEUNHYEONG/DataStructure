@@ -19,8 +19,6 @@ BinaryTree::BinaryTree()
 	A->rightChild = E;
 	E->leftChild = F;
 	E->rightChild = G;
-	
-
 
 	cout << "preorder : ";
 	preorder(A);
