@@ -7,6 +7,8 @@
 #include <iostream>
 #include <vector>
 
+#include "SortPrinter.h"
+
 using namespace std;
 
 class BubbleSort
@@ -20,19 +22,5 @@ class InsertionSort
 	public :
 		InsertionSort(vector<int> list);
 };
-
-class Print
-{
-	public: Print(vector<int> list)
-	{
-		for (int i = 0; i < list.size(); i++)
-		{
-			cout << list[i] << " ";
-		}
-		cout << endl;
-	}
-};
-
-
 #endif // !BASE_H
 

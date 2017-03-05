@@ -28,6 +28,6 @@ BubbleSort::BubbleSort(vector<int> list)
 		}
 	}
 
-	Print *print = new Print(list);
+	SortPrinter sortPrint(list);
 }
 

@@ -19,7 +19,6 @@ InsertionSort::InsertionSort(vector<int> list)
 	int temp;
 	int position;
 	
-	
 	//	리스트의 0번째가 아닌 1번째 포지션을 기준으로 시작함
 	for (int i = 1; i < list.size(); i++)
 	{
@@ -39,7 +38,5 @@ InsertionSort::InsertionSort(vector<int> list)
 		//	알맞은 위치에 값이 복사 됨 
 		list[position + 1] = temp;
 	}
-
-	Print *print = new Print(list);
-
+	SortPrinter sortPrinter(list);
 }
