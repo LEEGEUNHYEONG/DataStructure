@@ -8,7 +8,7 @@ typedef struct BSTNode
 	struct BSTNode* left;
 	struct BSTNode* right;
 	Data data;
-};
+}BSTNode;
 
 class BinarySearchTree
 {	
