@@ -142,11 +142,13 @@
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="RBTree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="BinarySearchTree.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RBTree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
