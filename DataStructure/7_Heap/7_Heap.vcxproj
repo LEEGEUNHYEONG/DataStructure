@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{FD3B46C6-056C-40AC-8A72-AF7C34C9DC27}</ProjectGuid>
+    <ProjectGuid>{E65F67CE-C628-4FAC-B6FD-FA88EC0E148B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My6_Search</RootNamespace>
+    <RootNamespace>My7_Heap</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,13 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BinarySearch.h" />
-    <ClInclude Include="BinarySearchTree.h" />
+    <ClInclude Include="Heap.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BinarySearch.cpp" />
-    <ClCompile Include="BinarySearchTree.cpp" />
+    <ClCompile Include="Heap.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,5 +1,11 @@
 #include "BinarySearchTree.h"
 
+/*
+	이진 탐색 트리
+	
+	왼쪽 노드는 부모의 노드 보다 작고, 
+	오른쪽 노드는 부모의 노드 보다 크다
+*/
 BinarySearchTree::BinarySearchTree()
 {	
 	BSTNode* tree = createNode(123);

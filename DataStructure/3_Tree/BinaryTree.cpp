@@ -1,5 +1,15 @@
 #include "BasicTree.h"
 #include <string>
+
+/*
+	이진 트리 
+
+	완전 이진 트리 (Complete Binary Tree)
+		- 잎 노드들이 트리의 왼쪽부터 차곡차곡 채워져 있는 형태 
+	
+	포화 이진 트리 (Full Binary Tree)
+		- 잎 노드들이 모두 같은 깊이에 존재 
+*/
 BinaryTree::BinaryTree()
 {
 	cout << "Binary Tree" << endl;

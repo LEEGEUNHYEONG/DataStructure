@@ -18,10 +18,7 @@
     <ClInclude Include="main.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="BinarySearch.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="BinarySearchTree.h">
+    <ClInclude Include="Heap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,10 +26,7 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BinarySearch.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BinarySearchTree.cpp">
+    <ClCompile Include="Heap.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
