@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3_Tree", "3_Tree\3_Tree.vcxproj", "{19DFDAAC-AB59-4339-83F2-37289A670B5A}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1_Stack", "1_Stack\Stack.vcxproj", "{082E20BD-2725-4F88-BBA1-F1973E6D4257}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2_Queue", "2_Queue\Queue.vcxproj", "{BF6F0ADA-D16C-4727-B337-462F640BB479}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9_Graph", "9_Graph\9_Graph.vcxproj", "{55D204D3-D3DD-4759-9A19-7C1BB6BF2A16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +93,14 @@ Global
 		{BF6F0ADA-D16C-4727-B337-462F640BB479}.Release|x64.Build.0 = Release|x64
 		{BF6F0ADA-D16C-4727-B337-462F640BB479}.Release|x86.ActiveCfg = Release|Win32
 		{BF6F0ADA-D16C-4727-B337-462F640BB479}.Release|x86.Build.0 = Release|Win32
+		{55D204D3-D3DD-4759-9A19-7C1BB6BF2A16}.Debug|x64.ActiveCfg = Debug|x64
+		{55D204D3-D3DD-4759-9A19-7C1BB6BF2A16}.Debug|x64.Build.0 = Debug|x64
+		{55D204D3-D3DD-4759-9A19-7C1BB6BF2A16}.Debug|x86.ActiveCfg = Debug|Win32
+		{55D204D3-D3DD-4759-9A19-7C1BB6BF2A16}.Debug|x86.Build.0 = Debug|Win32
+		{55D204D3-D3DD-4759-9A19-7C1BB6BF2A16}.Release|x64.ActiveCfg = Release|x64
+		{55D204D3-D3DD-4759-9A19-7C1BB6BF2A16}.Release|x64.Build.0 = Release|x64
+		{55D204D3-D3DD-4759-9A19-7C1BB6BF2A16}.Release|x86.ActiveCfg = Release|Win32
+		{55D204D3-D3DD-4759-9A19-7C1BB6BF2A16}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
