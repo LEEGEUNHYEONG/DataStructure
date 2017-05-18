@@ -142,11 +142,13 @@
     <ClCompile Include="ChainingHashTable.cpp" />
     <ClCompile Include="DivideHash.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OpenAddressingHash.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChainingHashTable.h" />
     <ClInclude Include="DivideHash.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="OpenAddressingHash.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

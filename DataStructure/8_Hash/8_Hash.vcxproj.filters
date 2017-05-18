@@ -24,6 +24,9 @@
     <ClCompile Include="ChainingHashTable.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="OpenAddressingHash.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -33,6 +36,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="ChainingHashTable.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenAddressingHash.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
